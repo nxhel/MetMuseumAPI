@@ -1,0 +1,74 @@
+html, body, div.wrapper {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Georgia", serif;
+	background-color: whitesmoke;
+}
+
+div.wrapper {
+  display: flex;
+  gap: 2em;
+}
+
+header {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+
+  background-color: aliceblue;
+  box-shadow: 5px 0px 18px 0px #848484;
+  padding: 2em;
+}
+
+header form {
+  display: flex;
+}
+
+header ul {
+  flex: 1;
+  list-style-type: none;
+  padding: 0;
+}
+
+header li {
+  padding: 0 0 1em;
+  cursor: pointer;
+}
+
+header li:hover {
+  color: lightblue;
+}
+
+header li.selected {
+  color: darkblue;
+  font-weight: bold;
+}
+
+main {
+  flex: 3;
+  overflow-y: auto;
+  padding: 2em;
+}
+
+main img {
+  display: block;
+  min-width: 0;
+  min-height: 0;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 2em 0;
+}
+
+main div.artist-info {
+  font-style: italic;
+}
+
+
+li:visited {
+  font-weight: bold;
+  color: blue;
+}
